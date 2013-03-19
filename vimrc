@@ -76,3 +76,6 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
 
 " Promela
 au BufNewFile,BufRead *.promela,*.prm           setf promela
+
+" NianioLang
+au BufRead,BufNewFile *.nl setfiletype nl
