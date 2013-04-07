@@ -75,7 +75,10 @@ endif
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
 
 " Promela
-au BufNewFile,BufRead *.promela,*.prm           setf promela
+au BufNewFile,BufRead *.promela,*.prm setfiletype promela
 
 " NianioLang
-au BufRead,BufNewFile *.nl setfiletype nl
+au BufNewFile,BufRead *.nl setfiletype nl
+
+" OpenCL
+au BufNewFile,BufRead *.opencl,*.cl setfiletype opencl
