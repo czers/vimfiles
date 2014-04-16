@@ -10,17 +10,18 @@ set showcmd
 set hlsearch
 
 " Display, scheme, etc.
+set t_Co=16
 set background=dark
-colorscheme peachpuff
+colorscheme solarized
 set number
 set ruler
 set textwidth=76
 set colorcolumn=+1
 
 " Indent and tabulation options
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
 set expandtab
 set autoindent
 
@@ -83,3 +84,6 @@ au BufNewFile,BufRead *.nl setfiletype nl
 
 " OpenCL
 au BufNewFile,BufRead *.opencl,*.cl setfiletype opencl
+
+" Smart Dust
+set tags=~/Dropbox/Studia/sd/ivlmgr-tags/tags_smart_dust,~/Dropbox/Studia/sd/ivlmgr-tags/tags_common,~/Dropbox/Studia/sd/ivlmgr-tags/tags_lwip,~/Dropbox/Studia/sd/ivlmgr-tags/tags_stm32
