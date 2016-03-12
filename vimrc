@@ -19,9 +19,9 @@ set textwidth=76
 set colorcolumn=+1
 
 " Indent and tabulation options
-set shiftwidth=2
-set softtabstop=2
-set tabstop=2
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
 set expandtab
 set autoindent
 
